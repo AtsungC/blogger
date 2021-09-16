@@ -1,0 +1,26 @@
+---
+title: 'First post '
+author: H
+date: '2021-09-16'
+slug: first-post
+categories: []
+tags:
+  - netlify
+  - git
+  - R Markdown
+---
+
+### Resource:
+  * [Emily C Zabor](https://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)
+  * [CradleToGaveR](https://youtu.be/9Jqvaoeh1W4)
+  
+# The workflow
+  1. rmarkdown (blogdown)
+  2. connect to git repo
+  3. connect git to netlify
+  4. website online
+  5. note: hugo theme (need to try the one work with hosting server)
+  
+
+
+
