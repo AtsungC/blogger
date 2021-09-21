@@ -1,0 +1,132 @@
+---
+title: '210921-notes'
+author: H
+date: '2021-09-21'
+slug: Notes
+categories:
+  - Programming notes
+tags:
+  - data science
+---
+
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+
+
+<ol style="list-style-type: decimal">
+<li><em>optim()</em> : minimize the value via changing arguments</li>
+<li><em>coef(lm_model)</em> : show the coefficients (slop and intercept)</li>
+</ol>
+<p><strong>R in Data Science</strong> : p353 <br />
+Excercises<br />
+1. the residual distance largely vary.
+see <em>dis</em></p>
+<pre class="r"><code>library(tibble)
+library(tidyverse)
+library(kableExtra)
+dis &lt;- list()
+for(i in 1:10){
+sim1a &lt;- tibble(
+  x=rep(1:10,each=3),
+  y=x*1.5+6+rt(length(x),df=2)
+)
+dis[i] &lt;- round(sqrt(mean((summary(lm(y~x,data=sim1a))$residuals)^2)),5)
+}
+dis &lt;- do.call(rbind.data.frame,dis)
+colnames(dis) &lt;- &#39;distance&#39;
+dis %&gt;% 
+  kbl() %&gt;% 
+  kable_paper(&#39;hover&#39;,full_width=F)</code></pre>
+<table class=" lightable-paper lightable-hover" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
+<thead>
+<tr>
+<th style="text-align:right;">
+distance
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2.24615
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2.74925
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2.69653
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5.75990
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.54434
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.54881
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2.26449
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.50710
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.25368
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2.04962
+</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>sim1a %&gt;% ggplot(aes(x=x,y=y))+
+  geom_point()+
+  geom_abline(aes(intercept=coef(lm(y~x,data=sim1a))[[1]],slope=coef(lm(y~x,data=sim1a))[[2]]))</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Other distance measure : mean-absolute distance.
+instead of root-mean distance</li>
+</ol>
+<pre class="r"><code>lm_sim1a &lt;- lm(y~x,data=sim1a)
+sim1a &lt;- as.data.frame(sim1a)
+model1 &lt;- function(a,data){ a[1]+ data$x*a[2]}
+measure_dis &lt;- function(mod,data) {
+  new &lt;- data %&gt;% select(x)
+  diff &lt;- data$y-model1(mod,new)
+  mean(abs(diff))
+}
+measure_dis(c(1,2),sim1a)</code></pre>
+<pre><code>## [1] 2.844357</code></pre>
+<pre class="r"><code>best &lt;- optim(c(0,0),measure_dis,data=sim1a)
+# the difference between abs-mean = best$par and root-mean =coef(lm)
+best$par #a1 =intercept, a2 =slope</code></pre>
+<pre><code>## [1] 5.680203 1.502989</code></pre>
+<pre class="r"><code>coef(lm_sim1a)</code></pre>
+<pre><code>## (Intercept)           x 
+##    6.172649    1.490779</code></pre>
+<p>error and solution :
+*prediction : predict()
+<a href="https://statisticsglobe.com/error-in-model-frame-default-must-be-data-frame-in-r">AWS</a></p>
+<ol start="3" style="list-style-type: decimal">
+<li>three-parameter model : a1 + data$x*a2 + a3
+a1 and a3 should combine into one parameter ?</li>
+</ol>

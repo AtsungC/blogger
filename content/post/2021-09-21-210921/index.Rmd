@@ -1,24 +1,26 @@
 ---
-title: '210921 '
-author: R package build
+title: '210921-notes'
+author: H
 date: '2021-09-21'
-slug: '210921'
+slug: Notes
 categories:
   - Programming notes
 tags:
   - data science
 ---
+1. *optim()* : minimize the value via changing arguments
+1. *coef(lm_model)* : show the coefficients (slop and intercept)
 
-`r optim()` : minimize the value via changing arguments
-`r coef(lm_model) ` : show the coefficients (slop and intercept)
 
 
-p353 Excercises
+**R in Data Science** : p353 <br />
+Excercises<br />
 1. the residual distance largely vary.
 see *dis*
-```{r}
+```{r, message=F}
 library(tibble)
 library(tidyverse)
+library(kableExtra)
 dis <- list()
 for(i in 1:10){
 sim1a <- tibble(
@@ -29,7 +31,9 @@ dis[i] <- round(sqrt(mean((summary(lm(y~x,data=sim1a))$residuals)^2)),5)
 }
 dis <- do.call(rbind.data.frame,dis)
 colnames(dis) <- 'distance'
-
+dis %>% 
+  kbl() %>% 
+  kable_paper('hover',full_width=F)
 
 sim1a %>% ggplot(aes(x=x,y=y))+
   geom_point()+
@@ -39,12 +43,12 @@ sim1a %>% ggplot(aes(x=x,y=y))+
 
 2. Other distance measure : mean-absolute distance.
  instead of root-mean distance
-```{r}
+```{r eval=TRUE}
 lm_sim1a <- lm(y~x,data=sim1a)
 sim1a <- as.data.frame(sim1a)
 model1 <- function(a,data){ a[1]+ data$x*a[2]}
 measure_dis <- function(mod,data) {
-  # new <- sim1a %>% select(x)
+  new <- data %>% select(x)
   diff <- data$y-model1(mod,new)
   mean(abs(diff))
 }
@@ -55,10 +59,10 @@ best$par #a1 =intercept, a2 =slope
 coef(lm_sim1a)
 ```
 error and solution : 
-* prediction : predict() 
-(AWS)[https://statisticsglobe.com/error-in-model-frame-default-must-be-data-frame-in-r]
+*prediction : predict() 
+[AWS](https://statisticsglobe.com/error-in-model-frame-default-must-be-data-frame-in-r)
 
-3. three-parameter model : a1 + data$x*a2 + a3
+3. three-parameter model : a1 + data$x*a2 + a3 <br />
 a1 and a3 should combine into one parameter ? 
 
 
