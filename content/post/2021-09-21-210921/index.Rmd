@@ -1,0 +1,67 @@
+---
+title: '210921 '
+author: R package build
+date: '2021-09-21'
+slug: '210921'
+categories:
+  - Programming notes
+tags:
+  - data science
+---
+
+`r optim()` : minimize the value via changing arguments
+`r coef(lm_model) ` : show the coefficients (slop and intercept)
+
+
+p353 Excercises
+1. the residual distance largely vary.
+see *dis*
+```{r}
+library(tibble)
+library(tidyverse)
+dis <- list()
+for(i in 1:10){
+sim1a <- tibble(
+  x=rep(1:10,each=3),
+  y=x*1.5+6+rt(length(x),df=2)
+)
+dis[i] <- round(sqrt(mean((summary(lm(y~x,data=sim1a))$residuals)^2)),5)
+}
+dis <- do.call(rbind.data.frame,dis)
+colnames(dis) <- 'distance'
+
+
+sim1a %>% ggplot(aes(x=x,y=y))+
+  geom_point()+
+  geom_abline(aes(intercept=coef(lm(y~x,data=sim1a))[[1]],slope=coef(lm(y~x,data=sim1a))[[2]]))
+
+```
+
+2. Other distance measure : mean-absolute distance.
+ instead of root-mean distance
+```{r}
+lm_sim1a <- lm(y~x,data=sim1a)
+sim1a <- as.data.frame(sim1a)
+model1 <- function(a,data){ a[1]+ data$x*a[2]}
+measure_dis <- function(mod,data) {
+  # new <- sim1a %>% select(x)
+  diff <- data$y-model1(mod,new)
+  mean(abs(diff))
+}
+measure_dis(c(1,2),sim1a)
+best <- optim(c(0,0),measure_dis,data=sim1a)
+# the difference between abs-mean = best$par and root-mean =coef(lm)
+best$par #a1 =intercept, a2 =slope
+coef(lm_sim1a)
+```
+error and solution : 
+* prediction : predict() 
+(AWS)[https://statisticsglobe.com/error-in-model-frame-default-must-be-data-frame-in-r]
+
+3. three-parameter model : a1 + data$x*a2 + a3
+a1 and a3 should combine into one parameter ? 
+
+
+
+
+
