@@ -10,12 +10,20 @@ tags:
 ---
 1. *optim()* : minimize the value via changing arguments
 1. *coef(lm_model)* : show the coefficients (slop and intercept)
-
+1. *data_grid()* : generate the unique varables 
+1. *add_prediction()* : generate the pred and add a column to data frame 
+  *plot prediction and actual point to demonstrate the model
+1. *add_residuals()* : generate the residual and add a column to data frame
+  plot the residuals with *geom_freqpoly()*  vs *geom_histogram()* <br />
+  equal to *line* vs *barchat* <br />
+  **the average of the residual will always be 0** <br />
+  or plot x against residuals : it should look like random noise<br />
+(**note** : data should set up clearly x and y variable)<br />
 
 
 **R in Data Science** : p353 <br />
 Excercises<br />
-1. the residual distance largely vary.
+1. the residual distance largely vary. <br />
 see *dis*
 ```{r, message=F}
 library(tibble)
@@ -66,6 +74,34 @@ error and solution :
 a1 and a3 should combine into one parameter ? 
 
 
+**R in Data Science** : p358 <br />
+Exercise <br />
+1. lm() ->> loess() : fit a smooth curve
+```{r}
+model_loess <- loess(y~x, data =sim1)
+grid <-  sim1 %>% data_grid(x) %>% add_predictions(model_loess)
+sim1 %>% ggplot(aes(x,y))+
+  geom_point()+
+  geom_line(aes(x,pred),data=grid)+
+  ggtitle('loess regression line')+
+  NULL
+sim1 <- sim1 %>% add_residuals(model_loess)
+sim1 %>% ggplot(aes(resid))+
+  geom_freqpoly()
+sim1 %>% ggplot(aes(x,resid))+
+  geom_point()+
+  geom_ref_line(h=0)
+```
 
-
+2. *add_predictions*, *gather_predictions*, *spread_predictions*                              <br />
+  The difference between these three similar functions                                        <br />
+  *add_predictions* : add a new column to origin data frame named as 'pred'                   <br />
+  *gather_predictions* : add two columns to origin data frame, which are 'model' and 'pred'   <br />
+  *spread_predictions* : add a new column to origin data frame named as 'model_name'          <br />
+  
+3. *geom_ref_line()* from modelr package
+   the ref in 0 is easy to see the difference
+   
+4. abs residual 
+  
 
