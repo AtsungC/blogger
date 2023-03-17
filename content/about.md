@@ -8,4 +8,7 @@ Hi there, I am a PhD from Pharmacology in Oxford and accidentally fall in the fi
 This blogger documents the arduous learning process in R and English. 
 Hope you find it is useful for you as well.
 
+[**CV**](/static/files/CV_HC.pdf)
+
+
 The whole website is build by the [**blogdown**](https://github.com/rstudio/blogdown) package with the Hugo theme :[@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme).

@@ -1,9 +1,9 @@
 ---
-title: 'First post : build up a website'
+title: '[R] First post : build up a website'
 author: H
 date: '2021-09-16'
 slug: first-post
-categories: []
+categories: [R]
 tags:
   - netlify
   - git

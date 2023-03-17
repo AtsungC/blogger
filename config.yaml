@@ -22,8 +22,7 @@ menu:
       url: https://www.kaggle.com/hsin1022
     - name: Github
       url: https://github.com/AtsungC
-    - name: CV
-      url: static/files/CV_HC.pdf
+
 
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
