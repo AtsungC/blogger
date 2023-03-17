@@ -20,6 +20,13 @@ menu:
       url: https://github.com/AtsungC/Blogger
     - name: Twitter
       url: https://twitter.com/HsinChen12
+    - name: Kaggle
+      url: https://www.kaggle.com/hsin1022
+    - name: Github
+      url: https://github.com/AtsungC
+    - name: CV
+      url: static/CV_HC.pdf
+
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
