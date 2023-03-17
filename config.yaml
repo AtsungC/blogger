@@ -16,8 +16,6 @@ menu:
   main:
     - name: About
       url: /about/
-    - name: GitHub
-      url: https://github.com/AtsungC/Blogger
     - name: Twitter
       url: https://twitter.com/HsinChen12
     - name: Kaggle
@@ -25,7 +23,7 @@ menu:
     - name: Github
       url: https://github.com/AtsungC
     - name: CV
-      url: static/CV_HC.pdf
+      url: /CV/
 
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
