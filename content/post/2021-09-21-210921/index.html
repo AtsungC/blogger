@@ -13,13 +13,24 @@ tags:
 <link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
 
 
+<div id="chapter-7-model" class="section level1">
+<h1>Chapter 7: model</h1>
 <ol style="list-style-type: decimal">
 <li><em>optim()</em> : minimize the value via changing arguments</li>
 <li><em>coef(lm_model)</em> : show the coefficients (slop and intercept)</li>
+<li><em>data_grid()</em> : generate the unique varables</li>
+<li><em>add_prediction()</em> : generate the pred and add a column to data frame
+*plot prediction and actual point to demonstrate the model</li>
+<li><em>add_residuals()</em> : generate the residual and add a column to data frame
+plot the residuals with <em>geom_freqpoly()</em> vs <em>geom_histogram()</em> <br />
+equal to <em>line</em> vs <em>barchat</em> <br />
+<strong>the average of the residual will always be 0</strong> <br />
+or plot x against residuals : it should look like random noise<br />
+(<strong>note</strong> : data should set up clearly x and y variable)<br /></li>
 </ol>
 <p><strong>R in Data Science</strong> : p353 <br />
 Excercises<br />
-1. the residual distance largely vary.
+1. the residual distance largely vary. <br />
 see <em>dis</em></p>
 <pre class="r"><code>library(tibble)
 library(tidyverse)
@@ -48,52 +59,52 @@ distance
 <tbody>
 <tr>
 <td style="text-align:right;">
-2.24615
+2.13433
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-2.74925
+1.54304
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-2.69653
+1.65833
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-5.75990
+1.79742
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-1.54434
+3.27779
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-1.54881
+3.18702
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-2.26449
+1.38123
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-1.50710
+4.64459
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-1.25368
+1.37978
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-2.04962
+1.50144
 </td>
 </tr>
 </tbody>
@@ -115,18 +126,50 @@ measure_dis &lt;- function(mod,data) {
   mean(abs(diff))
 }
 measure_dis(c(1,2),sim1a)</code></pre>
-<pre><code>## [1] 2.844357</code></pre>
+<pre><code>## [1] 2.398352</code></pre>
 <pre class="r"><code>best &lt;- optim(c(0,0),measure_dis,data=sim1a)
 # the difference between abs-mean = best$par and root-mean =coef(lm)
 best$par #a1 =intercept, a2 =slope</code></pre>
-<pre><code>## [1] 5.680203 1.502989</code></pre>
+<pre><code>## [1] 6.116969 1.441323</code></pre>
 <pre class="r"><code>coef(lm_sim1a)</code></pre>
 <pre><code>## (Intercept)           x 
-##    6.172649    1.490779</code></pre>
+##    5.831340    1.488455</code></pre>
 <p>error and solution :
 *prediction : predict()
 <a href="https://statisticsglobe.com/error-in-model-frame-default-must-be-data-frame-in-r">AWS</a></p>
 <ol start="3" style="list-style-type: decimal">
-<li>three-parameter model : a1 + data$x*a2 + a3
+<li>three-parameter model : a1 + data$x*a2 + a3 <br />
 a1 and a3 should combine into one parameter ?</li>
 </ol>
+<p><strong>R in Data Science</strong> : p358 <br />
+Exercise <br />
+1. lm() -&gt;&gt; loess() : fit a smooth curve</p>
+<pre class="r"><code>library(modelr)
+model_loess &lt;- loess(y~x, data =sim1)
+grid &lt;-  sim1 %&gt;% data_grid(x) %&gt;% add_predictions(model_loess)
+sim1 %&gt;% ggplot(aes(x,y))+
+  geom_point()+
+  geom_line(aes(x,pred),data=grid)+
+  ggtitle(&#39;loess regression line&#39;)+
+  NULL</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>sim1 &lt;- sim1 %&gt;% add_residuals(model_loess)
+sim1 %&gt;% ggplot(aes(resid))+
+  geom_freqpoly()</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<pre class="r"><code>sim1 %&gt;% ggplot(aes(x,resid))+
+  geom_point()+
+  geom_ref_line(h=0)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-3.png" width="672" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p><em>add_predictions</em>, <em>gather_predictions</em>, <em>spread_predictions</em> <br />
+The difference between these three similar functions <br />
+<em>add_predictions</em> : add a new column to origin data frame named as ‘pred’ <br />
+<em>gather_predictions</em> : add two columns to origin data frame, which are ‘model’ and ‘pred’ <br />
+<em>spread_predictions</em> : add a new column to origin data frame named as ‘model_name’ <br /></p></li>
+<li><p><em>geom_ref_line()</em> from modelr package
+the ref in 0 is easy to see the difference</p></li>
+<li><p>abs residual</p></li>
+</ol>
+</div>
