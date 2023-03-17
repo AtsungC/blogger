@@ -23,7 +23,7 @@ menu:
     - name: Github
       url: https://github.com/AtsungC
     - name: CV
-      url: /CV/
+      url: static/files/CV_HC.pdf
 
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
