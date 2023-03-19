@@ -1,0 +1,25 @@
+---
+title: '[En] OR51E2 receptor'
+author: H
+date: '2023-03-19'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+[**How do we smell? First 3D structure of human odour receptor offers clues**](https://www.nature.com/articles/d41586-023-00818-3)
+
+This is a long mystery of how the odours interpret the smell in our daily life. The interactions between molecules and olfactory receptors are like hitting a chord on a piano, instead of hitting a key. The challenge of olfactory research is that the receptor proteins can not be produced in common cell lines, only in olfactory sensory neurons.  The OR51E2 receptor is used in this breakthrough. It can be found in various organs, such as the gut, kidney and prostate tissues. Researchers focused on the mechanisms in this receptor and shed a light on olfactory research. 
+
+## Vocabulary 
+
+The **pong** of ripe cheese
+The most **enigmatic** of our senses
+
+
+
