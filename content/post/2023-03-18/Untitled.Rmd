@@ -1,7 +1,7 @@
 ---
 title: '[En] eLite'
 author: H
-date: '2023-03-17'
+date: '2023-03-18'
 categories: [En]
 tags:
   - OpenAI
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [**Strife at *eLife*: inside a journal\'s quest to upend science publishing**](https://www.nature.com/articles/d41586-023-00831-6)
 
 
-There is a new evolution in the scientific pressing system. The *eLite*, non-profit press, initiated the novel method. The manuscripts will not be rejected and instead be published with comments between editors and authors. The transformation should be taken cautiously. I see the benefits to the scientific community as the discussions will be open. This will be a learning material for young researchers. 
+There is an evolution in the scientific pressing system. The *eLite*, non-profit press, initiates the novel method. The manuscripts will not be rejected and instead be published with discussions between editors and authors. This transformation of the system aggressively affects in various aspects in and should be taken cautiously. The open discussions will benefit younger researchers as they can learn the directions of fields.
 
 ## Vocabulary
 
