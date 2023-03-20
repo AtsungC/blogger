@@ -1,0 +1,30 @@
+---
+title: '[En] Water regulation'
+author: H
+date: '2023-03-20'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+[**How the US will remove \'forever chemicals' from its drinking water**](https://www.nature.com/articles/d41586-023-00822-7)
+
+Perfluorinated and polyfluorinated alkyl substances are used in various industries for their durability, such as waterproof cloth. However, the durability of these chemicals enables them to accumulate in the environment, even in the human body. This increases the risk of cancer. The US government (AWWA) has attempted to remove these substances from drinking water for years. The regulation is implemented from voluntarily to mandatorily. The cost of cleaning water will be expensive in the beginning and the industry will catch up the pace of regulation. 
+
+## Vocabulary 
+The first limitations on a set of **pervasive** and dangerous ‘forever chemicals’ in US drinking water.<br>
+widely **dispersed** in the environment.<br>
+possibly **prohibitively** so for small water-treatment facilities.<br>
+perfluorinated and polyfluorinated alkyl substances (PFAS), a class of thousands of nearly indestructible compounds used in everything from non-stick cookware and waterproof clothes to industrial materials and cosmetics.<br>
+a **voluntary** limit for PFAS in drinking water in 2016. <br>
+Similar movements to **rein** in PFAS are **afoot** internationally. <br>
+**advocacy** organization <br>
+they **leach** into drinking-water supplies <br>
+
+
+
