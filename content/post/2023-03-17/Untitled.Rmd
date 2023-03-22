@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 GPT-4 is the latest incarnation of ChatGPT and is only available for paid subscribers from 14th March 2023. Although ChatGPT is a huge advance in language-based AI models, but the genuinity of answers is unstable. The hallucinations are found by the red team. At this moment, the ChapGPT is not appropriate in science, as the training data and code is cloaked in secrecy. However, this is definitely changing the way we do science in the future. 
 
 ## Vocabulary 
-Incarnation
+**Incarnation**
 
 
 

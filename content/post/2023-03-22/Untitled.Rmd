@@ -1,0 +1,28 @@
+---
+title: '[En] Water issue'
+author: H
+date: '2023-03-22'
+categories: [En]
+tags:
+
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+[**The world faces a water crisis-4 powerful charts show how**](https://www.nature.com/articles/d41586-023-00842-3)
+
+
+The issues of clean water and sanitation have been neglected for years in the UN’s agenda. Extreme climate changes (above 1.5C before pre-industrial temperature) exacerbate these problems, especially in low-income countries, such as sub-Saharan Africa and South-Eastern Asia. The water conference is expected to be a platform for transboundary water  resources cooperation in the Middle East and North Africa, although the agreement is voluntary. 
+
+## Vocabulary 
+
+**ramp up** fundraising <br>
+**desalination** of seawater <br>
+**special** envoy <br>
+
+
+
