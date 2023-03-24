@@ -1,0 +1,27 @@
+---
+title: '[En] The Abel winner'
+author: H
+date: '2023-03-23'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+(Abel Prize: pioneer of \’smooth\’ physics wins top maths award)[https://www.nature.com/articles/d41586-023-00833-4]
+
+
+Abel prize is the most coveted awards in mathematics and just announced the winner of this year (2023), Luis Caffarelli. He is a pioneer of smooth physics and offers a solution to describe the nature phenomena in equations, such as melting ice. The idea of this is regularity that avoids kinks and infinity in the equations. His collaborators said ‘ he has fantastic intuition’ that he can come up with idea from no where. 
+ 
+
+## Vocabulary 
+
+The most **coveted** awards.
+
+
+
