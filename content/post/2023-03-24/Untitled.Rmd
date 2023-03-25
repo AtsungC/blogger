@@ -1,0 +1,29 @@
+---
+title: '[En] The Alkaline taste'
+author: H
+date: '2023-03-24'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+(Fruit flies are first known animals that can taste alkaline foods)[https://www.nature.com/articles/d41586-023-00825-4]
+
+
+Drosophila is a well-studied model in the scientific field, and recently, a new discovery has been made from it - a new tasting sensation. This sensation is alkaline taste, which is often contained in toxic substances found in the natural environment. To distinguish between food with or without alkaline, researchers color the food gels either red or blue. The translucent body of the fruit fly helps researchers determine whether it has consumed red, blue, or both food gels. Through this experiment, a gene called "alka" was identified as responsible for the alkaline taste. Optogenetics was used to test this hypothesis. Although mammalian species also have the alka gene, this discovery sheds light on animal behaviours.
+ 
+
+## Vocabulary 
+
+*munching* on their preferred gel <br>
+the flies’ *translucent* bellies <br>
+the fleshy tip of their elongated *proboscis* <br>
+
+
+
