@@ -1,0 +1,26 @@
+---
+title: '[En] The Typoid compaign'
+author: H
+date: '2023-03-25'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+(Viruses in sewage help to pinpoint typoid hotspots)[https://www.nature.com/articles/d41586-023-00745-3]
+
+
+Typhoid is a serious health issue in countries with poor access to clean water and sanitation. It is caused by Salmonella enterica serotype Typhi and can be treated with antibiotics. However, the rapid emergence of antibiotic-resistant strains makes the situation more difficult. The WHO has recommended introducing vaccines in these countries, and in order to prioritize vaccination campaigns, scientists need to map the spread of Typhoid. There are several ways to detect its prevalence, such as checking health records at healthcare centers, or by detecting the existence of Salmonella or its DNA fragments using PCR. However, these methods are time-consuming and costly. To address this, scientists are testing water for fecal contamination by detecting bacteriophages, which can reduce the time to generate results and are less expensive than the methods mentioned above.
+ 
+
+## Vocabulary 
+
+
+
+
