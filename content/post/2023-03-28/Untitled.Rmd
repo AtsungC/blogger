@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [**JWST gets best view yet of planet in hotly pursued star system**](https://www.nature.com/articles/d41586-023-00876-7)
 
 
-TRAPPIST-1b is in a stellar system which is similar to the Earth. Recently, the hypothesis of no atmosphere in TRAPPIST-1b is confirmed by the data collected from James Webb Space Telescope (JWSP). Although this planet has a similar size to the Earth and orbits a single star, the radiation received from the star is four times higher than from the Earth. This might result in an obscene atmosphere on the planet. Scientists find this planetary system is a space laboratory model for studying atmosphere formation. 
+TRAPPIST-1b is located in a stellar system similar to Earth. Recently, data collected from the James Webb Space Telescope (JWST) has confirmed the hypothesis that TRAPPIST-1b has no atmosphere. Despite being similar in size to Earth and orbiting a single star, TRAPPIST-1b receives four times more radiation from its star than Earth, which may have resulted in the loss of its atmosphere. Scientists have found that this planetary system is a valuable model for studying atmospheric formation in space laboratories.
 
 
 
