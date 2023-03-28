@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Resource:
 
-(How Nancy Hopkins and her tape measure revealed the extent of sexism in science)[https://www.nature.com/articles/d41586-023-00887-4]
+[**How Nancy Hopkins and her tape measure revealed the extent of sexism in science**](https://www.nature.com/articles/d41586-023-00887-4)
 
 It might be surprising that discrimination of any kind is still present in academia. Nancy Hopkins is a pioneer for female scientists, as during the time when the public regarded women as lacking abilities in science, she proved them wrong. Her well-known experiment for feminism involved using a tape measure to measure the space granted to female scientists at MIT. This experiment showed a significant difference in the amount of space between genders, and MIT later admitted to the inappropriate policy. However, this is just the tip of the iceberg when it comes to discrimination in developed countries. People are still suffering from injustice in places where we are unaware of.
 

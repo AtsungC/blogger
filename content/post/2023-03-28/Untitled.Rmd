@@ -1,0 +1,29 @@
+---
+title: '[En] James Webb Space Telescope'
+author: H
+date: '2023-03-28'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**JWST gets best view yet of planet in hotly pursued star system**](https://www.nature.com/articles/d41586-023-00876-7)
+
+
+TRAPPIST-1b is in a stellar system which is similar to the Earth. Recently, the hypothesis of no atmosphere in TRAPPIST-1b is confirmed by the data collected from James Webb Space Telescope (JWSP). Although this planet has a similar size to the Earth and orbits a single star, the radiation received from the star is four times higher than from the Earth. This might result in an obscene atmosphere on the planet. Scientists find this planetary system is a space laboratory model for studying atmosphere formation. 
+
+
+
+
+## Vocabulary 
+
+because it is **blasted** by four times as much radiation as Earth receives from the Sun <br>
+potentially **scouring away** atmospheres <br>
+
+
