@@ -1,0 +1,25 @@
+---
+title: '[En] Syringe-like delievery system'
+author: H
+date: '2023-03-30'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**\"Astonishing\" molecular syringe ferries proteins into human cells**](https://www.nature.com/articles/d41586-023-00922-4)
+
+
+Science often modifies natural methods to achieve scientific breakthroughs. One well-known example is the CRISPR-Cas system, which was originally used by bacteria to digest exogenous DNA. Recently, researchers discovered a syringe-like system in the resident bacteria P. asymbiotica of nematodes. This system can release toxins into the prey of nematodes via the syringe-like mechanism. It could potentially be used as a delivery system in medical research. One possible application could be in precision medicine, such as identifying cancer cells and delivering medication directly to them.
+
+
+
+
+
+
