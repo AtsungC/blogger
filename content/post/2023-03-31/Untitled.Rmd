@@ -1,0 +1,30 @@
+---
+title: '[En] T. Rex'
+author: H
+date: '2023-03-31'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**Facelift for T.rex: analysis suggestes teeth were vovered by thin lips**](https://www.nature.com/articles/d41586-023-00928-y)
+
+
+The image of Tyrannosaurus Rex is deeply rooted in Hollywood films, with a fearsome mouth and exposed dagger-like teeth. However, this may no longer hold true, as scientists have found that *T.rex*’s teeth only have a thin layer of enamel, which can cause cracking in a dehydrated environment. A close relative, the Komodo dragon, is an example of an reptile with teeth covered by thin enamel and protected by lips and scales. This suggests that *T.rex* might have had lips as well, but paleontological evidence is yet to be discovered.
+
+
+
+## Vocabulary 
+
+**Crocodile**,**Komodo dragon**, **Tyrannosaurus** and **Pterosaurs** (flying dinosaur) <br>
+The fearsome **maw** <br>
+**Palaeontologist** <br>
+**Theropod** <br>
+**Enamel**  <br>
+**Contentious** debate <br>
