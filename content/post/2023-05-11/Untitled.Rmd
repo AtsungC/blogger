@@ -1,0 +1,31 @@
+---
+title: '[En] Pangenome'
+author: H
+date: '2023-05-11'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**First human ‘pangenome’ aims to catalogue genetic diversity**](https://www.nature.com/articles/d41586-023-01576-y)
+
+
+The first complete human genome draft has been completed for over two decades. Since then, new tools and novel technologies have been developed that can efficiently analyze the human genome and guarantee accuracy. In order to build a reference sequence for the human genome, diversity must be represented from as many races and communities around the globe as possible. However, the representative DNA samples were collected 2 or 3 decades ago, which is insufficient to represent the current population. Therefore, updated consents and samples are required before practical DNA sequencing can take place.
+
+
+
+
+## Vocabulary 
+
+**marginalized** people <br>
+**diaspora** and migration <br>
+**indigenous** tribes <br>
+
+
+
