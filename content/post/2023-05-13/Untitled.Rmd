@@ -1,0 +1,30 @@
+---
+title: '[En] Hammerhead'
+author: H
+date: '2023-05-13'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**Hammerhead sharks are first fish found to hold their breath**](https://www.nature.com/articles/d41586-023-01569-x)
+
+
+Marine scientists have found that scalloped hammerhead sharks are able to sacrifice a few breaths to maintain their body temperature in deep water. Gills in marine animals are equivalent to lungs in land animals, serving as organs for exchanging heat with the environment. For cold-blooded animals, this is critical in order to avoid low body temperatures. Scientists have observed that scalloped hammerhead sharks dive into deep water for hunting while still maintaining their body temperature. 
+
+
+
+
+## Vocabulary 
+
+**akin to** the adaptation: similar to <br>
+**dorsal** fin: back <br>
+
+
+
