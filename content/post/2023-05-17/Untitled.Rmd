@@ -1,0 +1,29 @@
+---
+title: '[En] New target of Alzheimer'
+author: H
+date: '2023-05-17'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**How one man's rare Alzheimer’s mutation delayed the onset of disease**](https://www.nature.com/articles/d41586-023-01610-z)
+
+Alzheimer's disease affected 7.1% of elderly people in the UK in 2019. Currently, there are few medications effectively targeting amyloid, which is believed to be responsible for neuron death, but they only slow the progression of the disease. The presence of the Paisa mutation has been identified as an indicator of the disease. Researchers found a man in a family with the Paisa mutation and an additional mutation that caused him to develop dementia later than average. This mutation affects the coding of the reelin protein and limits the clustering of tau, another hallmark of Alzheimer's disease, around neurons. This discovery opens up the possibility of treating dementia through this mechanism. Additionally, APOE binds to the same receptor as reelin and could be a potential new target for treatment. In conclusion, targeting tau may be a promising avenue for exploring new therapeutics for Alzheimer's disease.
+
+## Vocabulary 
+
+**Predisposed** to early-onset: inclined to <br>
+**Ophthalmologist**: eye doctor <br>
+**Schizophrenia** <br>
+
+
+
+
+

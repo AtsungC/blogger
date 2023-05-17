@@ -1,0 +1,29 @@
+---
+title: '[En] The death cap mushroom'
+author: H
+date: '2023-05-16'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**How one man's rare Alzheimer’s mutation delayed the onset of disease**](https://www.nature.com/articles/d41586-023-01610-z)
+
+The death cap mushroom is one of the most notorious mushroom due to its lethal toxin. Until recently, scientists have found its antidote by screening gene editing human cells. The toxin, alpha-Amanitin is involved in STT3B pathway, which adding sugar to protein. Further experiements, they found indocyanine green, a dye in medical imagine developed by Kodak in the 1950s. In the mice study, the dye can reduce the fatality by 40%. However, it might be channelling to prove its efficacy in the clinical trials because it reply on people who accidentally consume the toxin. 
+
+## Vocabulary 
+
+**unassuming** tan: humble <br>
+**fatality**: death rate <br>
+The area seemed **ripe** for researh: mature <br>
+
+
+
+
+
