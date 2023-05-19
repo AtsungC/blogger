@@ -1,0 +1,30 @@
+---
+title: '[En] The human origins'
+author: H
+date: '2023-05-18'
+categories: [En]
+tags:
+  - Nature
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Resource:
+
+[**Human-evolution story rewritten by fresh data and more computing power**](https://www.nature.com/articles/d41586-023-01664-z)
+
+Another theory is being challenged due to emerging advanced methods and data. The wildly accepted belief that the origin of humans being in one location and spread to other continents is now being questioned. Evolutionary archaeologists have devised a model to test this theory using genomic data. Their finding indicate that evolution is more akin to a ‘tangled vine’ rancher than a transitional ‘tree of life’. The loosely structured branches of this vine suggest that modern humans have undergone millennia of intermingling in multiple regions of Africa. The model’s predictions are assessed by comparing them to modern human migration patterns. This serves as yet another example highlighting the critical role of data analysis in scientific research. 
+
+
+## Vocabulary 
+
+**intermingled** by millennia: mixed <br>
+**Neanderthal** DNA: ancient humans <br>
+**archaeology** <br>
+**archaic** human: ancient <br>
+
+
+
+
